@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصيدليات المسجلة في ولاية الخرطوم | منصة صيدليتنا</title>
+  <meta name="description" content="تصفح جميع الصيدليات المسجلة في الخرطوم، بحري، أم درمان، شرق النيل، وكرري، وتعرف على ساعات العمل وحالة التوفر.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا - منصة صيدليات ولاية الخرطوم">
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> الرئيسية
+          </a>
+          <a href="search.html" class="nav-link">
+            <i class="fas fa-search"></i> البحث عن دواء
+          </a>
+          <a href="pharmacies.html" class="nav-link active">
+            <i class="fas fa-clinic-medical"></i> الصيدليات
+          </a>
+          <a href="medicines.html" class="nav-link">
+            <i class="fas fa-pills"></i> دليل الأدوية
+          </a>
+
+          <div class="mobile-actions">
+            <a href="login.html" class="btn btn-outline-primary btn-block">
+              <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </a>
+            <a href="register.html" class="btn btn-primary btn-block">
+              <i class="fas fa-user-plus"></i> إنشاء حساب
+            </a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+          </a>
+          <a href="register.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-user-plus"></i> إنشاء حساب
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div style="background-color: #ffffff; border-bottom: 1px solid var(--border-color); padding: 40px 0;">
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <span class="section-tag"><i class="fas fa-map-marker-alt"></i> دليل الصيدليات المعتمدة</span>
+          <h1 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-top: 6px;">
+            الصيدليات الموجودة في الموقع
+          </h1>
+          <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 6px;">
+            قائمة الصيدليات المسجلة في ولاية الخرطوم والتي تحدث أسعارها ومخزونها باستمرار
+          </p>
+        </div>
+        <div>
+          <span id="pharmaciesCountBadge" class="badge badge-open" style="font-size: 0.95rem; padding: 8px 16px;">
+            <i class="fas fa-clinic-medical"></i> جاري التحميل...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content & Filters -->
+  <main class="container" style="padding: 40px 20px 60px;">
+    
+    <!-- Filter Controls Bar -->
+    <div class="search-toolbar">
+      <div style="flex: 1; min-width: 260px;">
+        <div style="position: relative;">
+          <i class="fas fa-search" style="position: absolute; right: 14px; top: 12px; color: #94a3b8;"></i>
+          <input type="text" id="pharmacySearchInput" placeholder="ابحث باسم الصيدلية أو الشارع أو الحي..."
+            style="width: 100%; padding: 10px 42px 10px 14px; border: 1.5px solid var(--border-color); border-radius: var(--radius-md); outline: none;">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label"><i class="fas fa-map-pin"></i> المنطقة:</span>
+        <select id="pharmacyAreaSelect" class="custom-select">
+          <option value="الكل">كل ولاية الخرطوم</option>
+          <option value="الخرطوم">الخرطوم</option>
+          <option value="بحري">بحري</option>
+          <option value="أم درمان">أم درمان</option>
+          <option value="شرق النيل">شرق النيل</option>
+          <option value="كرري">كرري</option>
+          <option value="أمبدة">أمبدة</option>
+        </select>
+
+        <span class="filter-label" style="margin-right: 10px;"><i class="fas fa-door-open"></i> حالة الصيدلية:</span>
+        <select id="pharmacyStatusSelect" class="custom-select">
+          <option value="all">الكل (مفتوحة ومغلقة)</option>
+          <option value="open">المفتوحة الآن فقط</option>
+          <option value="24h">صيدليات خدمة 24 ساعة</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Pharmacies Cards Grid -->
+    <div id="pharmaciesContainer" class="pharmacies-grid">
+      <!-- Injected dynamically via pharmacies.js -->
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>جميع الحقوق محفوظة &copy; 2026 منصة صيدليتنا - ولاية الخرطوم</div>
+        <div><a href="index.html" style="color: #cbd5e1;">العودة للرئيسية</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pharmacies.js"></script>
+</body>
+</html>

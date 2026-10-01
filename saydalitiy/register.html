@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب جديد | منصة صيدليتنا</title>
+  <meta name="description" content="أنشئ حسابك الآن في منصة صيدليتنا للبحث عن الأدوية في ولاية الخرطوم ومقارنة الأسعار وحفظ الصيدليات المفضلة.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا">
+        </a>
+        <div>
+          <a href="index.html" class="btn btn-light btn-sm">
+            <i class="fas fa-arrow-right"></i> العودة للرئيسية
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Register Form Wrapper -->
+  <main class="auth-page-wrapper">
+    <div class="auth-card" style="max-width: 520px;">
+      <div class="auth-header">
+        <div style="width: 60px; height: 60px; border-radius: 18px; background: #ecfdf5; color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 auto 16px;">
+          <i class="fas fa-user-plus"></i>
+        </div>
+        <h2>إنشاء حساب جديد</h2>
+        <p>انضم إلى منصة صيدليتنا لتجربة بحث أسرع ومقارنة ذكية لأسعار الأدوية</p>
+      </div>
+
+      <form id="registerForm" novalidate>
+        
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="regName">الاسم الكامل</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="regName" placeholder="الاسم الثلاثي أو الثنائي..." required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="regPhone">رقم الهاتف (في السودان)</label>
+          <div class="input-with-icon">
+            <i class="fas fa-phone"></i>
+            <input type="tel" id="regPhone" placeholder="0912345678 أو 0112345678" dir="ltr" style="text-align: right;" required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="regEmail">البريد الإلكتروني</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="regEmail" placeholder="name@example.com" dir="ltr" style="text-align: right;" required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="regPassword">كلمة المرور</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="regPassword" placeholder="لا تقل عن 6 خانات..." required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="regConfirmPassword">تأكيد كلمة المرور</label>
+          <div class="input-with-icon">
+            <i class="fas fa-shield-alt"></i>
+            <input type="password" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور..." required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Terms Agreement -->
+        <div class="form-group" style="margin-bottom: 24px;">
+          <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">
+            <input type="checkbox" id="regTerms" style="margin-top: 4px;" required>
+            <span>
+              أوافق على <a href="#" style="color: var(--primary); text-decoration: underline;">شروط الاستخدام</a> و <a href="#" style="color: var(--primary); text-decoration: underline;">سياسة الخصوصية والتنويه الطبي</a> لمنصة صيدليتنا.
+            </span>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <i class="fas fa-check-circle"></i> إنشاء الحساب
+        </button>
+      </form>
+
+      <!-- Footer: Link to Login -->
+      <div class="auth-footer">
+        لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

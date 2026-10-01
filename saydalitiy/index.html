@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صيدليتنا | منصة صيدليات ولاية الخرطوم والبحث عن الدواء</title>
+  <meta name="description" content="منصة صيدليتنا تساعدك في البحث عن دوائك ومعرفة الصيدليات التي يتوفر فيها داخل ولاية الخرطوم مع مقارنة الأسعار ومعرفة السعر الأقل.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا - منصة صيدليات ولاية الخرطوم">
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">
+            <i class="fas fa-home"></i> الرئيسية
+          </a>
+          <a href="search.html" class="nav-link">
+            <i class="fas fa-search"></i> البحث عن دواء
+          </a>
+          <a href="pharmacies.html" class="nav-link">
+            <i class="fas fa-clinic-medical"></i> الصيدليات
+          </a>
+          <a href="medicines.html" class="nav-link">
+            <i class="fas fa-pills"></i> دليل الأدوية
+          </a>
+
+          <!-- Mobile Actions (visible on small screens inside menu) -->
+          <div class="mobile-actions">
+            <a href="login.html" class="btn btn-outline-primary btn-block">
+              <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </a>
+            <a href="register.html" class="btn btn-primary btn-block">
+              <i class="fas fa-user-plus"></i> إنشاء حساب
+            </a>
+          </div>
+        </nav>
+
+        <!-- Desktop Action Buttons (Login / Register / Profile) -->
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+          </a>
+          <a href="register.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-user-plus"></i> إنشاء حساب
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="section-tag"><i class="fas fa-heartbeat"></i> المنصة الأولى لصيدليات ولاية الخرطوم</span>
+          <h1>دواؤك <span>أقرب مما تتوقع</span> وبأقل سعر</h1>
+          <p class="hero-subtitle">
+            منصة "صيدليتنا" تساعدك في البحث عن دوائك ومعرفة الصيدليات التي يتوفر فيها داخل ولاية الخرطوم، مع إمكانية مقارنة الأسعار ومعرفة السعر الأقل، وتوفير وقتك وجهدك في الحالات الطارئة.
+          </p>
+
+          <!-- Interactive Search Box inside Hero -->
+          <form action="search.html" method="GET" class="hero-quick-search">
+            <i class="fas fa-search" style="color: #94a3b8; margin-right: 12px;"></i>
+            <input type="text" name="q" placeholder="اكتب اسم الدواء (مثال: Panadol, Augmentin, Concor)..." required>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-search"></i> ابحث الآن
+            </button>
+          </form>
+
+          <!-- Popular Searches Tags -->
+          <div class="hero-tags" style="margin-top: 18px;">
+            <span>أدوية شائعة:</span>
+            <a href="search.html?q=Panadol 500mg">Panadol</a>
+            <a href="search.html?q=Augmentin 1g">Augmentin</a>
+            <a href="search.html?q=Concor 5mg">Concor</a>
+            <a href="search.html?q=Ventolin Inhaler">Ventolin</a>
+            <a href="search.html?q=Nexium 40mg">Nexium</a>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions" style="margin-top: 28px;">
+            <a href="search.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-search"></i> ابحث عن دوائك
+            </a>
+            <a href="pharmacies.html" class="btn btn-outline btn-lg" style="background: white;">
+              <i class="fas fa-clinic-medical"></i> تصفح الصيدليات
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Preview Card -->
+        <div class="hero-visual">
+          <div class="hero-card-preview">
+            <div class="preview-badge-cheapest">
+              <i class="fas fa-award"></i> ميزة مقارنة الأسعار
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: #ecfdf5; display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--primary);">
+                <i class="fas fa-pills"></i>
+              </div>
+              <div>
+                <strong style="font-size: 1.15rem; color: #0f172a; display: block;">Panadol 500mg (GSK)</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">نتائج البحث عبر ولاية الخرطوم</span>
+              </div>
+            </div>
+
+            <!-- Mini Preview Comparison Table -->
+            <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid #e2e8f0; margin-bottom: 16px;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: right;">
+                <thead style="background: #f8fafc; color: var(--text-secondary);">
+                  <tr>
+                    <th style="padding: 10px;">الصيدلية</th>
+                    <th style="padding: 10px;">المنطقة</th>
+                    <th style="padding: 10px;">السعر</th>
+                    <th style="padding: 10px;">الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="background: #f0fdf4;">
+                    <td style="padding: 10px;">
+                      <strong>صيدلية النيلين</strong>
+                      <span class="badge badge-cheapest" style="font-size: 10px; padding: 2px 6px;">أرخص سعر ⭐</span>
+                    </td>
+                    <td style="padding: 10px;">بحري</td>
+                    <td style="padding: 10px; font-weight: 800; color: #059669;">4,500 ج.س</td>
+                    <td style="padding: 10px;"><span class="badge badge-available">متوفر</span></td>
+                  </tr>
+                  <tr style="border-top: 1px solid #f1f5f9;">
+                    <td style="padding: 10px;">صيدلية الشفاء</td>
+                    <td style="padding: 10px;">الخرطوم</td>
+                    <td style="padding: 10px; font-weight: 700;">4,800 ج.س</td>
+                    <td style="padding: 10px;"><span class="badge badge-available">متوفر</span></td>
+                  </tr>
+                  <tr style="border-top: 1px solid #f1f5f9;">
+                    <td style="padding: 10px;">صيدلية السلام</td>
+                    <td style="padding: 10px;">أم درمان</td>
+                    <td style="padding: 10px; font-weight: 700;">5,500 ج.س</td>
+                    <td style="padding: 10px;"><span class="badge badge-available">متوفر</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted);">
+              <span><i class="fas fa-check-circle" style="color: var(--primary);"></i> توفير مباشر للوقت والمال</span>
+              <a href="search.html?q=Panadol 500mg" style="color: var(--primary); font-weight: 700;">جرب الآن &larr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works (كيف يعمل الموقع؟) -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-stream"></i> تجربة سهلة وسريعة</span>
+        <h2 class="section-title">كيف يعمل موقع صيدليتنا؟</h2>
+        <p class="section-desc">
+          خطوات بسيطة ومباشرة تمكنك من العثور على دوائك في ولاية الخرطوم بأقل سعر وفي أقرب صيدلية
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>ابحث عن الدواء</h3>
+          <p>اكتب اسم الدواء التجاري أو العلمي في مربع البحث، وسيقوم النظام بالتعرف عليه فوراً.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>شاهد الصيدليات</h3>
+          <p>يعرض النظام قائمة الصيدليات في الخرطوم، بحري، وأم درمان التي يتوفر بها الدواء حالياً.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>قارن الأسعار</h3>
+          <p>يقوم النظام آلياً بمقارنة الأسعار بين الصيدليات وتحديد وتمييز "أرخص سعر" متاح لك.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-icon">
+            <i class="fas fa-clinic-medical"></i>
+          </div>
+          <h3>اختر الصيدلية المناسبة</h3>
+          <p>شاهد عنوان الصيدلية وموقعها على الخريطة وساعات العمل، وتواصل معها مباشرة هاتفياً أو عبر واتساب.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Statistics (إحصائيات المنصة) -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-clinic-medical"></i></div>
+          <div class="stat-number" data-count="120">120+</div>
+          <div class="stat-label">صيدلية مسجلة في الخرطوم</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-pills"></i></div>
+          <div class="stat-number" data-count="1450">1,450+</div>
+          <div class="stat-label">دواء مسجل بالأسعار</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-search-dollar"></i></div>
+          <div class="stat-number" data-count="3820">3,800+</div>
+          <div class="stat-label">عملية بحث يومياً</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-count="12450">12,000+</div>
+          <div class="stat-label">مستخدم مستفيد من الخدمة</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-shield-alt"></i> لماذا صيدليتنا؟</span>
+        <h2 class="section-title">مميزات تخدم المواطن والصيدلي</h2>
+        <p class="section-desc">صممت المنصة للتخفيف من عناء البحث عن الأدوية الحيوية في ظل الظروف الراهنة في ولاية الخرطوم.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-tag"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 10px;">كشف أرخص سعر فوراً</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            خوارزمية ذكية تقارن أسعار الدواء الواحد بين جميع الصيدليات وتبرز الصيدلية ذات السعر الأقل لتوفير ميزانيتك.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper" style="background-color: var(--primary-light); color: var(--primary);">
+            <i class="fas fa-map-pin"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 10px;">تغطية مناطق ولاية الخرطوم</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            فلترة سريعة حسب المنطقة (الخرطوم، بحري، أم درمان، شرق النيل، كرري، وأمبدة) للوصول لأقرب نقطة منك.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper" style="background-color: #fef3c7; color: #d97706;">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 10px;">معرفة الصيدليات المفتوحة و24 ساعة</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            مؤشر حي يوضح حالة عمل الصيدلية في الوقت الفعلي مع تمييز صيدليات الطوارئ التي تعمل طوال الليل.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); padding: 50px 0; border-top: 1px solid #d1fae5; border-bottom: 1px solid #d1fae5;">
+    <div class="container" style="text-align: center;">
+      <h2 style="font-size: 2rem; font-weight: 800; color: #065f46; margin-bottom: 14px;">هل تبحث عن دواء معين الآن؟</h2>
+      <p style="color: #047857; font-size: 1.1rem; max-width: 620px; margin: 0 auto 24px;">
+        لا داعي للتنقل بين الصيدليات، تحقق من توفره وسعره خلال ثوانٍ معدودة.
+      </p>
+      <a href="search.html" class="btn btn-primary btn-lg">
+        <i class="fas fa-search-dollar"></i> ابدأ البحث ومقارنة الأسعار
+      </a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Medical Disclaimer Box as specified in prompt -->
+      <div class="medical-disclaimer-card">
+        <i class="fas fa-info-circle"></i>
+        <p>
+          <strong>تنويه طبي هام:</strong> منصة "صيدليتنا" هي نظام إلكتروني لعرض معلومات توفر وأسعار الأدوية كما تقوم الصيدليات المسجلة في ولاية الخرطوم بإدخالها وتحديثها بصفة دورية. الموقع لا يقوم بتشخيص المرض أو وصف الأدوية أو بيعها مباشرة، ويُنصح دائمًا باستشارة الطبيب المعالج أو الصيدلي المؤهل قبل تناول أي علاج.
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+            <img src="images/logo.svg" alt="صيدليتنا" style="height: 44px; filter: brightness(0) invert(1);">
+          </div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 20px;">
+            المنصة الإلكترونية الأولى لتسجيل صيدليات ولاية الخرطوم وربطها بالمواطنين، لتسهيل الحصول على الدواء ومقارنة الأسعار ومعرفة السعر الأقل.
+          </p>
+          <div style="display: flex; gap: 12px; font-size: 18px;">
+            <a href="#" style="color: #cbd5e1;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="color: #cbd5e1;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: #cbd5e1;"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" style="color: #cbd5e1;"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="search.html">البحث عن دواء ومقارنة الأسعار</a></li>
+            <li><a href="pharmacies.html">دليل صيدليات الخرطوم</a></li>
+            <li><a href="medicines.html">دليل الأدوية المسجلة</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+            <li><a href="register.html">إنشاء حساب جديد</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>مناطق التغطية</h4>
+          <ul class="footer-links">
+            <li><a href="pharmacies.html?area=الخرطوم">صيدليات الخرطوم</a></li>
+            <li><a href="pharmacies.html?area=بحري">صيدليات بحري</a></li>
+            <li><a href="pharmacies.html?area=أم درمان">صيدليات أم درمان</a></li>
+            <li><a href="pharmacies.html?area=شرق النيل">صيدليات شرق النيل</a></li>
+            <li><a href="pharmacies.html?area=كرري">صيدليات كرري</a></li>
+            <li><a href="pharmacies.html?area=أمبدة">صيدليات أمبدة</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>تسجيل صيدلية جديدة</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 14px;">
+            هل تملك صيدلية في ولاية الخرطوم وترغب في إدراجها ضمن المنصة لعرض مخزون الأدوية والأسعار للمواطنين؟
+          </p>
+          <a href="register.html?type=pharmacy" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.25);">
+            <i class="fas fa-clinic-medical"></i> انضم كصيدلية مسجلة
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          جميع الحقوق محفوظة &copy; 2026 منصة صيدليتنا - ولاية الخرطوم.
+        </div>
+        <div>
+          تصميم وبرمجة Frontend نقية (HTML5 - CSS3 - JavaScript)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

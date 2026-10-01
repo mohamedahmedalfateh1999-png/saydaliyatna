@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل الأدوية المسجلة | منصة صيدليتنا</title>
+  <meta name="description" content="تصفح قائمة الأدوية المسجلة في صيدليات ولاية الخرطوم، والمادة الفعالة، والجرعات، وقارن أسعارها فوراً.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا - منصة صيدليات ولاية الخرطوم">
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> الرئيسية
+          </a>
+          <a href="search.html" class="nav-link">
+            <i class="fas fa-search"></i> البحث عن دواء
+          </a>
+          <a href="pharmacies.html" class="nav-link">
+            <i class="fas fa-clinic-medical"></i> الصيدليات
+          </a>
+          <a href="medicines.html" class="nav-link active">
+            <i class="fas fa-pills"></i> دليل الأدوية
+          </a>
+
+          <div class="mobile-actions">
+            <a href="login.html" class="btn btn-outline-primary btn-block">
+              <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </a>
+            <a href="register.html" class="btn btn-primary btn-block">
+              <i class="fas fa-user-plus"></i> إنشاء حساب
+            </a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+          </a>
+          <a href="register.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-user-plus"></i> إنشاء حساب
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div style="background-color: #ffffff; border-bottom: 1px solid var(--border-color); padding: 40px 0;">
+    <div class="container">
+      <span class="section-tag"><i class="fas fa-book-medical"></i> دليل الأدوية الشامل</span>
+      <h1 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-top: 6px;">
+        الأدوية المسجلة في صيدليات الخرطوم
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 6px;">
+        تصفح الأدوية بالاسم أو التصنيف الطبي واعرف أقل سعر متوفر لها في الصيدليات
+      </p>
+    </div>
+  </div>
+
+  <!-- Content & Filter Area -->
+  <main class="container" style="padding: 40px 20px 60px;">
+    
+    <div class="search-toolbar">
+      <div style="flex: 1; min-width: 280px;">
+        <div style="position: relative;">
+          <i class="fas fa-search" style="position: absolute; right: 14px; top: 12px; color: #94a3b8;"></i>
+          <input type="text" id="medicineCatalogSearch" placeholder="ابحث باسم الدواء، المادة الفعالة، أو الشركة المصنعة..."
+            style="width: 100%; padding: 10px 42px 10px 14px; border: 1.5px solid var(--border-color); border-radius: var(--radius-md); outline: none;">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label"><i class="fas fa-tags"></i> التصنيف الطبي:</span>
+        <select id="categoryFilter" class="custom-select">
+          <option value="الكل">جميع التصنيفات</option>
+          <option value="مسكنات وخافض حرارة">مسكنات وخافض حرارة</option>
+          <option value="مضادات حيوية">مضادات حيوية</option>
+          <option value="أدوية القلب والضغط">أدوية القلب والضغط</option>
+          <option value="أدوية السكري">أدوية السكري</option>
+          <option value="أدوية الجهاز التنفسي والربو">أدوية الجهاز التنفسي والربو</option>
+          <option value="أدوية الجهاز الهضمي والمعدة">أدوية الجهاز الهضمي والمعدة</option>
+          <option value="مسكنات ومضادات التهاب">مسكنات ومضادات التهاب</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Medicines Grid -->
+    <div id="medicinesCatalogContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+      <!-- Populated dynamically via medicines.js -->
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>جميع الحقوق محفوظة &copy; 2026 منصة صيدليتنا - ولاية الخرطوم</div>
+        <div><a href="index.html" style="color: #cbd5e1;">العودة للرئيسية</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/medicines.js"></script>
+</body>
+</html>

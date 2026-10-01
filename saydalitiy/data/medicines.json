@@ -1,0 +1,607 @@
+{
+  "last_updated": "2026-10-01",
+  "areas": [
+    "الخرطوم",
+    "بحري",
+    "أم درمان",
+    "شرق النيل",
+    "كرري",
+    "أمبدة"
+  ],
+  "pharmacies": [
+    {
+      "id": 1,
+      "name": "صيدلية الشفاء الحديثة",
+      "slug": "al-shifa-pharmacy",
+      "area": "الخرطوم",
+      "address": "الخرطوم - العمارات، شارع 15 تقاطع محمد نجيب",
+      "phone": "0123456781",
+      "whatsapp": "249123456781",
+      "status": "open",
+      "status_text": "مفتوحة الآن (24 ساعة)",
+      "is_24h": true,
+      "rating": 4.9,
+      "reviews_count": 128,
+      "working_hours": "على مدار 24 ساعة - طوال أيام الأسبوع",
+      "image": "images/pharmacy/pharmacy-1.svg",
+      "medicines_count": 420,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.5885, "lng": 32.5342 }
+    },
+    {
+      "id": 2,
+      "name": "صيدلية الأمل المركزية",
+      "slug": "al-amal-pharmacy",
+      "area": "الخرطوم",
+      "address": "الخرطوم - السوق العربي، مقابل موقف شروني",
+      "phone": "0912345672",
+      "whatsapp": "249912345672",
+      "status": "open",
+      "status_text": "مفتوحة الآن",
+      "is_24h": false,
+      "rating": 4.7,
+      "reviews_count": 95,
+      "working_hours": "08:00 ص - 11:30 م",
+      "image": "images/pharmacy/pharmacy-2.svg",
+      "medicines_count": 380,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.5991, "lng": 32.5284 }
+    },
+    {
+      "id": 3,
+      "name": "صيدلية النيلين الكبرى",
+      "slug": "al-neelain-pharmacy",
+      "area": "بحري",
+      "address": "بحري - المزاد، تقاطع شارع البلدية مع المعونة",
+      "phone": "0112345673",
+      "whatsapp": "249112345673",
+      "status": "open",
+      "status_text": "مفتوحة الآن (24 ساعة)",
+      "is_24h": true,
+      "rating": 4.8,
+      "reviews_count": 110,
+      "working_hours": "على مدار 24 ساعة",
+      "image": "images/pharmacy/pharmacy-3.svg",
+      "medicines_count": 450,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.6321, "lng": 32.5398 }
+    },
+    {
+      "id": 4,
+      "name": "صيدلية السلام التخصصية",
+      "slug": "al-salam-pharmacy",
+      "area": "أم درمان",
+      "address": "أم درمان - الشهداء، شارع الدكاترة جوار مستشفى السلاح الطبي",
+      "phone": "0923456784",
+      "whatsapp": "249923456784",
+      "status": "open",
+      "status_text": "مفتوحة الآن",
+      "is_24h": false,
+      "rating": 4.6,
+      "reviews_count": 84,
+      "working_hours": "07:30 ص - 12:00 منتصف الليل",
+      "image": "images/pharmacy/pharmacy-4.svg",
+      "medicines_count": 395,
+      "delivery_available": false,
+      "coordinates": { "lat": 15.6512, "lng": 32.4815 }
+    },
+    {
+      "id": 5,
+      "name": "صيدلية الرازي الدولية",
+      "slug": "al-razi-pharmacy",
+      "area": "بحري",
+      "address": "بحري - كافوري، مربع 6 شارع أحمد قاسم",
+      "phone": "0123987655",
+      "whatsapp": "249123987655",
+      "status": "open",
+      "status_text": "مفتوحة الآن",
+      "is_24h": false,
+      "rating": 4.9,
+      "reviews_count": 142,
+      "working_hours": "08:00 ص - 11:00 م",
+      "image": "images/pharmacy/pharmacy-5.svg",
+      "medicines_count": 510,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.6428, "lng": 32.5641 }
+    },
+    {
+      "id": 6,
+      "name": "صيدلية مكة النموذجية",
+      "slug": "makka-pharmacy",
+      "area": "أم درمان",
+      "address": "أم درمان - المهندسين، شارع الأربعين قرب صينية المنصورة",
+      "phone": "0918765436",
+      "whatsapp": "249918765436",
+      "status": "closed",
+      "status_text": "مغلقة مؤقتاً (تفتح 4:00 م)",
+      "is_24h": false,
+      "rating": 4.5,
+      "reviews_count": 67,
+      "working_hours": "04:00 م - 12:00 منتصف الليل",
+      "image": "images/pharmacy/pharmacy-6.svg",
+      "medicines_count": 320,
+      "delivery_available": false,
+      "coordinates": { "lat": 15.6203, "lng": 32.4695 }
+    },
+    {
+      "id": 7,
+      "name": "صيدلية طيبة الشاملة",
+      "slug": "tiba-pharmacy",
+      "area": "شرق النيل",
+      "address": "شرق النيل - حلة كوكو، المحطة الوسطى",
+      "phone": "0118765437",
+      "whatsapp": "249118765437",
+      "status": "open",
+      "status_text": "مفتوحة الآن",
+      "is_24h": false,
+      "rating": 4.4,
+      "reviews_count": 59,
+      "working_hours": "08:00 ص - 10:30 م",
+      "image": "images/pharmacy/pharmacy-7.svg",
+      "medicines_count": 290,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.6087, "lng": 32.6102 }
+    },
+    {
+      "id": 8,
+      "name": "صيدلية الحياة المتميزة",
+      "slug": "al-hayat-pharmacy",
+      "area": "كرري",
+      "address": "كرري - الثورة، الحارة الثامنة شارع النص",
+      "phone": "0965432108",
+      "whatsapp": "249965432108",
+      "status": "open",
+      "status_text": "مفتوحة الآن (24 ساعة)",
+      "is_24h": true,
+      "rating": 4.8,
+      "reviews_count": 91,
+      "working_hours": "على مدار 24 ساعة",
+      "image": "images/pharmacy/pharmacy-8.svg",
+      "medicines_count": 360,
+      "delivery_available": true,
+      "coordinates": { "lat": 15.6811, "lng": 32.4923 }
+    }
+  ],
+  "medicines": [
+    {
+      "id": 101,
+      "name": "Panadol 500mg",
+      "generic_name": "Paracetamol",
+      "category": "مسكنات وخافض حرارة",
+      "manufacturer": "GlaxoSmithKline (GSK)",
+      "concentration": "500mg",
+      "dosage_form": "أقراص (Tablets)",
+      "description": "مسكن للألم وخافض للحرارة فعال للصداع وآلام الجسم والأسنان ونزلات البرد.",
+      "image": "images/medicines/panadol.svg",
+      "availability": [
+        {
+          "pharmacy_id": 3,
+          "pharmacy_name": "صيدلية النيلين الكبرى",
+          "area": "بحري",
+          "price": 4500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر بكمية جيدة",
+          "last_updated": "منذ ساعتين"
+        },
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 4800,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 09:30 ص"
+        },
+        {
+          "pharmacy_id": 2,
+          "pharmacy_name": "صيدلية الأمل المركزية",
+          "area": "الخرطوم",
+          "price": 5000,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 10:15 ص"
+        },
+        {
+          "pharmacy_id": 4,
+          "pharmacy_name": "صيدلية السلام التخصصية",
+          "area": "أم درمان",
+          "price": 5500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "أمس 04:00 م"
+        },
+        {
+          "pharmacy_id": 8,
+          "pharmacy_name": "صيدلية الحياة المتميزة",
+          "area": "كرري",
+          "price": 4700,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ 3 ساعات"
+        },
+        {
+          "pharmacy_id": 6,
+          "pharmacy_name": "صيدلية مكة النموذجية",
+          "area": "أم درمان",
+          "price": 5200,
+          "currency": "SDG",
+          "available": false,
+          "quantity_status": "نفد من المخزون",
+          "last_updated": "اليوم 11:00 ص"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Panadol Extra",
+      "generic_name": "Paracetamol + Caffeine",
+      "category": "مسكنات وخافض حرارة",
+      "manufacturer": "GlaxoSmithKline (GSK)",
+      "concentration": "500mg / 65mg",
+      "dosage_form": "أقراص (Tablets)",
+      "description": "مسكن متقدم للألم الشديد والصداع النصفي معزز بالكافيين لسرعة المفعول.",
+      "image": "images/medicines/panadol-extra.svg",
+      "availability": [
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 6200,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ 4 ساعات"
+        },
+        {
+          "pharmacy_id": 5,
+          "pharmacy_name": "صيدلية الرازي الدولية",
+          "area": "بحري",
+          "price": 5900,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر بكمية وافرة",
+          "last_updated": "اليوم 08:45 ص"
+        },
+        {
+          "pharmacy_id": 7,
+          "pharmacy_name": "صيدلية طيبة الشاملة",
+          "area": "شرق النيل",
+          "price": 6500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر (عبوات محدودة)",
+          "last_updated": "اليوم 10:00 ص"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Augmentin 1g",
+      "generic_name": "Amoxicillin + Clavulanic Acid",
+      "category": "مضادات حيوية",
+      "manufacturer": "GlaxoSmithKline (GSK)",
+      "concentration": "1000mg",
+      "dosage_form": "أقراص مغلفة (Film-coated tablets)",
+      "description": "مضاد حيوي واسع المدى لعلاج التهابات الجهاز التنفسي والمسالك والجلد.",
+      "image": "images/medicines/augmentin.svg",
+      "availability": [
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 14500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 11:30 ص"
+        },
+        {
+          "pharmacy_id": 3,
+          "pharmacy_name": "صيدلية النيلين الكبرى",
+          "area": "بحري",
+          "price": 13800,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 09:10 ص"
+        },
+        {
+          "pharmacy_id": 4,
+          "pharmacy_name": "صيدلية السلام التخصصية",
+          "area": "أم درمان",
+          "price": 15000,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ ساعتين"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Amoxicillin 500mg",
+      "generic_name": "Amoxicillin Trihydrate",
+      "category": "مضادات حيوية",
+      "manufacturer": "Azal Pharma (صناعة وطنية)",
+      "concentration": "500mg",
+      "dosage_form": "كبسولات (Capsules)",
+      "description": "مضاد حيوي بكتيري لعلاج التهابات الحلق والجيوب الأنفية والأذن الوسطى.",
+      "image": "images/medicines/amoxicillin.svg",
+      "availability": [
+        {
+          "pharmacy_id": 2,
+          "pharmacy_name": "صيدلية الأمل المركزية",
+          "area": "الخرطوم",
+          "price": 3800,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 10:20 ص"
+        },
+        {
+          "pharmacy_id": 5,
+          "pharmacy_name": "صيدلية الرازي الدولية",
+          "area": "بحري",
+          "price": 3500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "أمس 06:30 م"
+        },
+        {
+          "pharmacy_id": 8,
+          "pharmacy_name": "صيدلية الحياة المتميزة",
+          "area": "كرري",
+          "price": 3700,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ 45 دقيقة"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Concor 5mg",
+      "generic_name": "Bisoprolol Fumarate",
+      "category": "أدوية القلب والضغط",
+      "manufacturer": "Merck",
+      "concentration": "5mg",
+      "dosage_form": "أقراص (Tablets)",
+      "description": "علاج خافض لضغط الدم المرتفع وتنظيم ضربات القلب وحماية عضلة القلب.",
+      "image": "images/medicines/concor.svg",
+      "availability": [
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 9200,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 08:15 ص"
+        },
+        {
+          "pharmacy_id": 4,
+          "pharmacy_name": "صيدلية السلام التخصصية",
+          "area": "أم درمان",
+          "price": 8900,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 11:45 ص"
+        },
+        {
+          "pharmacy_id": 3,
+          "pharmacy_name": "صيدلية النيلين الكبرى",
+          "area": "بحري",
+          "price": 9500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ ساعة"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Glucophage 500mg",
+      "generic_name": "Metformin Hydrochloride",
+      "category": "أدوية السكري",
+      "manufacturer": "Merck",
+      "concentration": "500mg",
+      "dosage_form": "أقراص (Tablets)",
+      "description": "دواء منظم لمستوى السكر في الدم لمرضى السكري من النوع الثاني.",
+      "image": "images/medicines/glucophage.svg",
+      "availability": [
+        {
+          "pharmacy_id": 2,
+          "pharmacy_name": "صيدلية الأمل المركزية",
+          "area": "الخرطوم",
+          "price": 4200,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 09:00 ص"
+        },
+        {
+          "pharmacy_id": 5,
+          "pharmacy_name": "صيدلية الرازي الدولية",
+          "area": "بحري",
+          "price": 4000,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر بكمية كبيرة",
+          "last_updated": "منذ ساعتين"
+        },
+        {
+          "pharmacy_id": 7,
+          "pharmacy_name": "صيدلية طيبة الشاملة",
+          "area": "شرق النيل",
+          "price": 4300,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "أمس"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Ventolin Inhaler",
+      "generic_name": "Salbutamol Sulfate",
+      "category": "أدوية الجهاز التنفسي والربو",
+      "manufacturer": "GlaxoSmithKline (GSK)",
+      "concentration": "100mcg/dose",
+      "dosage_form": "بخاخ استنشاق (Inhaler)",
+      "description": "موسع للشعب الهوائية سريع المفعول لعلاج وتخفيف نوبات الربو وضيق التنفس.",
+      "image": "images/medicines/ventolin.svg",
+      "availability": [
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 11500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 10:00 ص"
+        },
+        {
+          "pharmacy_id": 3,
+          "pharmacy_name": "صيدلية النيلين الكبرى",
+          "area": "بحري",
+          "price": 10800,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "منذ ساعة"
+        },
+        {
+          "pharmacy_id": 8,
+          "pharmacy_name": "صيدلية الحياة المتميزة",
+          "area": "كرري",
+          "price": 11200,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 08:30 ص"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Nexium 40mg",
+      "generic_name": "Esomeprazole",
+      "category": "أدوية الجهاز الهضمي والمعدة",
+      "manufacturer": "AstraZeneca",
+      "concentration": "40mg",
+      "dosage_form": "أقراص مقاومة للمعدة",
+      "description": "مثبط لمضخة البروتون لعلاج ارتجاع المريء وقرحة المعدة وحموضة المعدة المزمنة.",
+      "image": "images/medicines/nexium.svg",
+      "availability": [
+        {
+          "pharmacy_id": 5,
+          "pharmacy_name": "صيدلية الرازي الدولية",
+          "area": "بحري",
+          "price": 16000,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 09:30 ص"
+        },
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 16500,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 10:45 ص"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Profen 400mg",
+      "generic_name": "Ibuprofen",
+      "category": "مسكنات ومضادات التهاب",
+      "manufacturer": "Abbott",
+      "concentration": "400mg",
+      "dosage_form": "أقراص (Tablets)",
+      "description": "مضاد للالتهاب ومسكن لآلام المفاصل والعظام والصداع.",
+      "image": "images/medicines/profen.svg",
+      "availability": [
+        {
+          "pharmacy_id": 2,
+          "pharmacy_name": "صيدلية الأمل المركزية",
+          "area": "الخرطوم",
+          "price": 3200,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 09:15 ص"
+        },
+        {
+          "pharmacy_id": 4,
+          "pharmacy_name": "صيدلية السلام التخصصية",
+          "area": "أم درمان",
+          "price": 3000,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "اليوم 08:00 ص"
+        },
+        {
+          "pharmacy_id": 7,
+          "pharmacy_name": "صيدلية طيبة الشاملة",
+          "area": "شرق النيل",
+          "price": 3300,
+          "currency": "SDG",
+          "available": true,
+          "quantity_status": "متوفر",
+          "last_updated": "أمس"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Insulin Mixtard 30",
+      "generic_name": "Human Insulin 30/70",
+      "category": "أدوية السكري",
+      "manufacturer": "Novo Nordisk",
+      "concentration": "100 IU/ml",
+      "dosage_form": "فيال حقن (Injection Vial)",
+      "description": "إنسولين بشري مسبق الخلط لضبط سكر الدم لمرضى السكري.",
+      "image": "images/medicines/insulin.svg",
+      "availability": [
+        {
+          "pharmacy_id": 1,
+          "pharmacy_name": "صيدلية الشفاء الحديثة",
+          "area": "الخرطوم",
+          "price": 18000,
+          "currency": "SDG",
+          "available": false,
+          "quantity_status": "غير متوفر حالياً",
+          "last_updated": "اليوم 07:00 ص"
+        },
+        {
+          "pharmacy_id": 3,
+          "pharmacy_name": "صيدلية النيلين الكبرى",
+          "area": "بحري",
+          "price": 18500,
+          "currency": "SDG",
+          "available": false,
+          "quantity_status": "غير متوفر حالياً",
+          "last_updated": "اليوم 08:30 ص"
+        }
+      ]
+    }
+  ]
+}

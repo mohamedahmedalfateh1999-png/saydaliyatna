@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول | منصة صيدليتنا</title>
+  <meta name="description" content="تسجيل الدخول إلى حسابك في منصة صيدليتنا للوصول إلى تفضيلات الأدوية وسجل البحث وإشعارات الصيدليات.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا">
+        </a>
+        <div>
+          <a href="index.html" class="btn btn-light btn-sm">
+            <i class="fas fa-arrow-right"></i> العودة للرئيسية
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Form Wrapper -->
+  <main class="auth-page-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div style="width: 60px; height: 60px; border-radius: 18px; background: #ecfdf5; color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 auto 16px;">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h2>تسجيل الدخول</h2>
+        <p>مرحباً بك مجدداً في منصة صيدليات ولاية الخرطوم</p>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <!-- Identity: Email or Phone -->
+        <div class="form-group">
+          <label for="loginIdentity">البريد الإلكتروني أو رقم الهاتف</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user-circle"></i>
+            <input type="text" id="loginIdentity" placeholder="مثال: 0912345678 أو email@example.com" required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="loginPassword">كلمة المرور</label>
+          <div class="input-with-icon">
+            <i class="fas fa-key"></i>
+            <input type="password" id="loginPassword" placeholder="اكتب كلمة المرور..." required>
+          </div>
+          <div class="input-error"></div>
+        </div>
+
+        <!-- Meta: Remember & Forgot -->
+        <div class="auth-meta-row">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-secondary);">
+            <input type="checkbox" id="rememberMe" checked>
+            <span>تذكرني على هذا الجهاز</span>
+          </label>
+          <a href="#" onclick="handleForgotPassword(event)" style="color: var(--primary); font-weight: 600;">هل نسيت كلمة المرور؟</a>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+        </button>
+      </form>
+
+      <!-- Footer: Link to Register -->
+      <div class="auth-footer">
+        ليس لديك حساب بعد؟ <a href="register.html">إنشاء حساب جديد</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

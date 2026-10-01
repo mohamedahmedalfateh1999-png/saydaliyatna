@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البحث عن دواء ومقارنة الأسعار | منصة صيدليتنا</title>
+  <meta name="description" content="ابحث عن دوائك في صيدليات ولاية الخرطوم وقارن بين أسعار الصيدليات وتعرف على أرخص سعر متوفر فوراً.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="images/logo.svg" alt="صيدليتنا - منصة صيدليات ولاية الخرطوم">
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i> الرئيسية
+          </a>
+          <a href="search.html" class="nav-link active">
+            <i class="fas fa-search"></i> البحث عن دواء
+          </a>
+          <a href="pharmacies.html" class="nav-link">
+            <i class="fas fa-clinic-medical"></i> الصيدليات
+          </a>
+          <a href="medicines.html" class="nav-link">
+            <i class="fas fa-pills"></i> دليل الأدوية
+          </a>
+
+          <div class="mobile-actions">
+            <a href="login.html" class="btn btn-outline-primary btn-block">
+              <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+            </a>
+            <a href="register.html" class="btn btn-primary btn-block">
+              <i class="fas fa-user-plus"></i> إنشاء حساب
+            </a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+          </a>
+          <a href="register.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-user-plus"></i> إنشاء حساب
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Big Search Header Box -->
+  <section class="search-header-box">
+    <div class="container">
+      <h1>البحث الذكي عن الدواء ومقارنة الأسعار</h1>
+      <p>اكتب اسم الدواء لمعرفة جميع الصيدليات المتوفر فيها داخل ولاية الخرطوم ومقارنة أسعارها لتحديد السعر الأقل.</p>
+
+      <div class="search-bar-large">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="medicineSearchInput" placeholder="اكتب اسم الدواء الذي تبحث عنه (مثال: Panadol, Augmentin, Concor)..." autocomplete="off" autofocus>
+          <button type="button" id="medicineSearchBtn" class="btn btn-primary btn-search">
+            <i class="fas fa-search"></i> بحث
+          </button>
+        </div>
+
+        <!-- Autocomplete Suggestions Dropdown -->
+        <div id="autocompleteDropdown" class="autocomplete-dropdown"></div>
+
+        <!-- Quick Select Pills -->
+        <div class="search-quick-tags">
+          <span>أمثلة سريعة:</span>
+          <button type="button" class="search-tag-chip" data-medicine="Panadol 500mg">Panadol 500mg</button>
+          <button type="button" class="search-tag-chip" data-medicine="Panadol Extra">Panadol Extra</button>
+          <button type="button" class="search-tag-chip" data-medicine="Augmentin 1g">Augmentin 1g</button>
+          <button type="button" class="search-tag-chip" data-medicine="Amoxicillin 500mg">Amoxicillin</button>
+          <button type="button" class="search-tag-chip" data-medicine="Concor 5mg">Concor 5mg</button>
+          <button type="button" class="search-tag-chip" data-medicine="Ventolin Inhaler">Ventolin Inhaler</button>
+          <button type="button" class="search-tag-chip" data-medicine="Insulin Mixtard 30">Insulin (غير متوفر - للتجربة)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Main Container -->
+  <main class="container" style="padding-bottom: 60px;">
+    
+    <!-- Filters & Sorting Toolbar -->
+    <div class="search-toolbar">
+      <div class="filter-group">
+        <span class="filter-label"><i class="fas fa-filter"></i> فلترة بالمنطقة:</span>
+        <select id="areaFilter" class="custom-select">
+          <option value="الكل">كل مناطق الخرطوم</option>
+          <option value="الخرطوم">الخرطوم</option>
+          <option value="بحري">بحري</option>
+          <option value="أم درمان">أم درمان</option>
+          <option value="شرق النيل">شرق النيل</option>
+          <option value="كرري">كرري</option>
+          <option value="أمبدة">أمبدة</option>
+        </select>
+
+        <span class="filter-label" style="margin-right: 12px;"><i class="fas fa-sort-amount-down"></i> ترتيب النتائج:</span>
+        <select id="sortFilter" class="custom-select">
+          <option value="price-asc">أرخص سعر أولاً (تصاعدي)</option>
+          <option value="price-desc">الأعلى سعراً (تنازلي)</option>
+          <option value="name">اسم الصيدلية أ-ي</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <button id="viewToggleBtn" class="btn btn-outline btn-sm">
+          <i class="fas fa-th-large"></i> عرض كبطاقات
+        </button>
+      </div>
+    </div>
+
+    <!-- Results Section (Populated dynamically by search.js) -->
+    <div id="searchResultsSection">
+      <!-- Loading placeholder initially -->
+      <div style="text-align: center; padding: 40px 20px;">
+        <i class="fas fa-circle-notch fa-spin" style="font-size: 32px; color: var(--primary);"></i>
+        <p style="margin-top: 14px; color: var(--text-secondary);">جاري تهيئة محرك البحث ومقارنة الأسعار...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="medical-disclaimer-card">
+        <i class="fas fa-info-circle"></i>
+        <p>
+          <strong>تنويه طبي:</strong> أسعار وتوافر الأدوية المعروضة في نتائج البحث مستمدة مباشرة من التحديثات الصادرة عن الصيدليات المسجلة في ولاية الخرطوم. المنصة وسيط معرفي لمقارنة الأسعار ولا تقوم ببيع أو صرف الأدوية بدون وصفة طبية نظامية.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>جميع الحقوق محفوظة &copy; 2026 منصة صيدليتنا - ولاية الخرطوم</div>
+        <div><a href="index.html" style="color: #cbd5e1;">العودة للرئيسية</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
